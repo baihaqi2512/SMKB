@@ -13,9 +13,19 @@ h6 {
     font-weight: 600;
 }
 
-/* <-- USER HEADER PROFILE CSS --> */
+label {
+    font-weight: 600;
+}
 
-.action {}
+.radio-btn-form {
+    padding: 5px;
+}
+
+.radio-size input[type=radio] {
+    transform: scale(1.5);
+}
+
+/* <-- USER HEADER PROFILE CSS --> */
 
 .action .profile {
     position: relative;
@@ -112,11 +122,7 @@ h6 {
     color: #ff5d94;
 }
 
-/* <-- END --> */
-
-label {
-    font-weight: 600;
-}
+/* <-- DASHBOARD --> */
 
 .dashboard-content {
     padding: 30px;
@@ -154,6 +160,20 @@ label {
     transition: all 200ms ease-out;
 }
 
+.menu-card img {
+    width: 60px;
+    padding-bottom: 10px;
+    padding: 15px 0px;
+}
+
+.menu-card p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.25em;
+}
+
+/* <-- CONTENT --> */
+
 .content-container {
     width: 100%;
     margin-left: 270px;
@@ -166,16 +186,47 @@ label {
     margin: 25px;
 }
 
-.menu-card img {
-    width: 60px;
-    padding-bottom: 10px;
-    padding: 15px 0px;
+.Modul-container {
+    display: flex;
 }
 
-.menu-card p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    font-size: 1.25em;
+.modul-header {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.sub-modul-title {
+    padding: 20px;
+    border-bottom: solid thin #cdcdcd;
+}
+
+.sub-modul-title h5 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+    padding-inline: 10px;
+}
+
+.back-btn:hover {
+    background-color: #4b4b4b;
+    border-radius: 5px;
+    padding-inline: 10px;
+    transition: all 200ms ease-out;
+    color: #FFC83D;
+}
+
+.back-btn a {
+    padding-left: 20px;
 }
 
 /* <-- SIDE BAR NAVIGATION--> */
@@ -247,42 +298,6 @@ label {
     width: 80%;
 }
 
-/* END */
-
-.Modul-container {
-    display: flex;
-}
-
-.modul-header {
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-.back-btn {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    font-weight: 600;
-    padding-inline: 10px;
-}
-
-.back-btn:hover {
-    background-color: #4b4b4b;
-    border-radius: 5px;
-    padding-inline: 10px;
-    transition: all 200ms ease-out;
-    color: #FFC83D;
-}
-
-.back-btn a {
-    padding-left: 20px;
-}
-
-
 /* <-- TAB CSS --> */
 
 /* Style the tab */
@@ -323,25 +338,7 @@ label {
     border-top: none;
 }
 
-.sub-modul-title {
-    padding: 20px;
-    border-bottom: solid thin #cdcdcd;
-}
-
-.sub-modul-title h5 {
-    margin: 0;
-    font-weight: 600;
-}
-
-.radio-btn-form {
-    padding: 5px;
-}
-
-.radio-size input[type=radio] {
-    transform: scale(1.5);
-}
-
-/*  <-- BUTTON --> CSS  */
+/*  <-- BUTTON CSS -->  */
 
 .btn {
     font-size: 14px;
@@ -367,7 +364,7 @@ label {
 }
 
 
-/* TABLE CSS */
+/* <-- TABLE CSS --> */
 
 table {
     font-size: 14px;
@@ -446,11 +443,6 @@ table {
     margin-inline: 5px;
 }
 
-/* .table-function {
-    display: flex;
-    align-items: center;
-} */
-
 .table-navigation {
     display: flex;
     justify-content: space-between;
@@ -462,13 +454,13 @@ table {
 }
 
 
-/* FORM CSS */
+/* <-- FORM CSS --> */
 
 .form-control {
     font-size: 14px;
 }
 
-/* RESPONSIVE */
+/* <-- RESPONSIVE --> */
 
 @media only screen and (max-width: 600px) {
     .nav-btn {
