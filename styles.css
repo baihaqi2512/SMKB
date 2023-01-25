@@ -186,6 +186,10 @@ label {
     margin: 25px;
 }
 
+.notabcontent{
+    padding: 20px;
+}
+
 .Modul-container {
     display: flex;
 }
