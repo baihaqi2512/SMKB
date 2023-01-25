@@ -4,6 +4,15 @@ body {
     font-family: 'Roboto';
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+
 /* <-- USER HEADER PROFILE CSS --> */
 
 .action {}
@@ -324,46 +333,6 @@ label {
     font-weight: 600;
 }
 
-
-.function-bar {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0px
-}
-
-.search-form {
-    margin: 0 10px;
-}
-
-.show-record {
-    display: flex;
-    align-items: center;
-}
-
-.show-record p {
-    margin: 0;
-    font-weight: 600;
-}
-
-.show-record select {
-    margin-inline: 5px;
-}
-
-.table-function {
-    display: flex;
-    align-items: center;
-}
-
-.table-navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.data-table-empty {
-    text-align: center;
-}
-
 .radio-btn-form {
     padding: 5px;
 }
@@ -373,6 +342,10 @@ label {
 }
 
 /*  <-- BUTTON --> CSS  */
+
+.btn {
+    font-size: 14px;
+}
 
 .btn.btn-primary {
     background-color: #FFC83D;
@@ -400,6 +373,14 @@ table {
     font-size: 14px;
 }
 
+.table-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
 .tindakan i {
     cursor: pointer;
     font-size: 24px;
@@ -414,14 +395,78 @@ table {
     color: #E45046;
 }
 
-
 .filter-title p {
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 15px;
 }
 
-/* <-- TABLE CSS END -->*/
+.filter-table-function {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: solid thin #e4e4e4;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: #fcfcfc;
+}
+
+.search-filter {
+    border: solid thin #e4e4e4;
+    padding: 15px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.search-filter .form-group {
+    margin-bottom: 0;
+}
+
+.function-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px
+}
+
+.search-form {
+    margin: 0 10px;
+}
+
+.show-record {
+    display: flex;
+    align-items: center;
+}
+
+.show-record p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.show-record select {
+    margin-inline: 5px;
+}
+
+/* .table-function {
+    display: flex;
+    align-items: center;
+} */
+
+.table-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.data-table-empty {
+    text-align: center;
+}
+
+
+/* FORM CSS */
+
+.form-control {
+    font-size: 14px;
+}
 
 /* RESPONSIVE */
 
