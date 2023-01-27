@@ -42,3 +42,10 @@ function openTab(evt, cityName) {
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
+
+  // <-- SEARCHABLE DROPDOWN -->
+  $(document).ready(function () {
+    $('select').selectize({
+        sortField: 'text'
+    });
+});
