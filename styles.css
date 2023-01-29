@@ -25,6 +25,19 @@ label {
     transform: scale(1.5);
 }
 
+.add-file {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid thin#cdcdcd;
+    border-style: dashed;
+    border-radius: 5px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.add-file i {margin-inline: 10px;}
+
 /* <-- USER HEADER PROFILE CSS --> */
 
 .action .profile {
@@ -177,6 +190,8 @@ label {
 .content-container {
     width: 100%;
     margin-left: 270px;
+    height: 100vh;
+    overflow: auto;
 }
 
 .content {
@@ -346,6 +361,11 @@ label {
 
 .btn {
     font-size: 14px;
+    padding-inline:25px;
+}
+.btn i {
+    margin-right: 10px;
+
 }
 
 .btn.btn-primary {
@@ -367,6 +387,23 @@ label {
     background-color: #fcbc1c;
 }
 
+.btn.btn-secondary{
+    background-color: #007bff;
+}
+.btn.btn-secondary:hover{
+    background-color: #007bffbf;
+}
+
+.btn.btn-outline{
+    background-color: #f3f3f3;
+    border:solid thin #ced4da;
+    border-radius: 5px;
+}
+
+.send-button {
+    display: flex;
+    justify-content: center;
+}
 
 /* <-- TABLE CSS --> */
 
@@ -382,6 +419,9 @@ table {
     padding-bottom: 15px;
 }
 
+.tindakan{
+    white-space: nowrap;
+}
 .tindakan i {
     cursor: pointer;
     font-size: 24px;
@@ -413,7 +453,7 @@ table {
 }
 
 .search-filter {
-    border: solid thin #e4e4e4;
+    /* border: solid thin #e4e4e4; */
     padding: 15px 10px;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -489,6 +529,7 @@ table {
     .closenavbtn {
         display: none;
     }
+   
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
