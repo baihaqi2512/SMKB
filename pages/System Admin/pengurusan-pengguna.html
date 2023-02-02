@@ -150,11 +150,8 @@
                                     <label class="col-sm-4 col-form-label">Jabatan</label>
                                     <div class="col-sm-8">
                                         <select class="form-control searchable-dropdown">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
+                                            <option>Pejabat Bendahari</option>
+                                            <option>Pejabat Pendaftaran</option>
                                         </select>
                                     </div>
                                 </div>
@@ -164,18 +161,15 @@
                                     <label class="col-sm-4 col-form-label">Status</label>
                                     <div class="col-sm-8">
                                         <select class="form-control searchable-dropdown">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
+                                            <option>Aktif</option>
+                                            <option>Tidak Aktif</option>
+                                    
                                         </select>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-3">
-                                <div class="btn btn-outline"><i class="fa fa-search"
-                                        style="padding-right: 10px;"></i>Cari
+                                <div class="btn btn-outline"><i class="fa fa-search"></i>Cari
                                 </div>
                             </div>
                         </div>
@@ -200,7 +194,7 @@
                             <p>Rekod</p>
                         </div>
                         <div class="search-form">
-                            <input class="form-control" type="text" placeholder="Search">
+                            <input class="form-control" type="text" placeholder="Cari">
                         </div>
                     </div>
                     <div class="table-list table-responsive">
@@ -231,7 +225,7 @@
                                     </td>
                                 </tr>
                                 <!-- <tr>
-                                    <td colspan="7" class="data-table-empty">No Record Found</td>
+                                    <td colspan="7" class="data-table-empty">Tiada Rekod Ditemui</td>
                                 </tr> -->
 
                             </tbody>
@@ -245,7 +239,7 @@
                             <nav aria-label="...">
                                 <ul class="pagination">
                                     <li class="page-item disabled">
-                                        <span class="page-link">Previous</span>
+                                        <span class="page-link">Sebelumnya</span>
                                     </li>
                                     <li class="page-item"><a class="page-link" href="#">1</a></li>
                                     <li class="page-item active">
@@ -256,7 +250,7 @@
                                     </li>
                                     <li class="page-item"><a class="page-link" href="#">3</a></li>
                                     <li class="page-item">
-                                        <a class="page-link" href="#">Next</a>
+                                        <a class="page-link" href="#">Seterusnya</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -299,15 +293,16 @@
                                         <label for="kodModul">Tahap Baharu</label>
                                         <select class="form-control searchable-dropdown">
                                             <option>System Admin</option>
-                                            <option>2</option>
+                                            <option>Pengurus Capaian</option>
+                                            <option>Pengurus Baucar</option>
                                         </select>
                                     </div>
 
                                 </div>
 
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
+                                    <button type="button" class="btn btn-secondary">Simpan</button>
                                 </div>
                             </div>
                         </div>
@@ -333,7 +328,7 @@
                             <p>Rekod</p>
                         </div>
                         <div class="search-form">
-                            <input class="form-control" type="text" placeholder="Search">
+                            <input class="form-control" type="text" placeholder="Cari">
                         </div>
                     </div>
 
@@ -365,7 +360,7 @@
                                     </td>
                                 </tr>
                                 <!-- <tr>
-                                    <td colspan="7" class="data-table-empty">No Record Found</td>
+                                    <td colspan="7" class="data-table-empty">Tiada Rekod Ditemui</td>
                                 </tr> -->
 
                             </tbody>
@@ -379,7 +374,7 @@
                             <nav aria-label="...">
                                 <ul class="pagination">
                                     <li class="page-item disabled">
-                                        <span class="page-link">Previous</span>
+                                        <span class="page-link">Sebelumnya</span>
                                     </li>
                                     <li class="page-item"><a class="page-link" href="#">1</a></li>
                                     <li class="page-item active">
@@ -390,7 +385,7 @@
                                     </li>
                                     <li class="page-item"><a class="page-link" href="#">3</a></li>
                                     <li class="page-item">
-                                        <a class="page-link" href="#">Next</a>
+                                        <a class="page-link" href="#">Seterusnya</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -433,8 +428,8 @@
                                 </div>
 
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
+                                    <button type="button" class="btn btn-secondary">Simpan</button>
                                 </div>
                             </div>
                         </div>
@@ -444,13 +439,6 @@
             </div>
         </div>
     </div>
-    <script>
-        $(document).ready(function () {
-            $('.searchable-dropdown').selectize({
-                sortField: 'text'
-            });
-        });
-    </script>
 </body>
 
 </html>

@@ -189,7 +189,7 @@ label {
 
 .content-container {
     width: 100%;
-    margin-left: 270px;
+    margin-left: 250px;
     height: 100vh;
     overflow: auto;
 }
@@ -260,7 +260,7 @@ label {
     position: absolute;
     background: #272727;
     height: 100vh;
-    width: 270px;
+    width: 250px;
     z-index: 999;
     top: 0;
     left: 0;
@@ -269,7 +269,7 @@ label {
 }
 
 .sidenav-logo img {
-    width: 200px;
+    width: 180px;
 }
 
 .nav-btn {
@@ -307,6 +307,8 @@ label {
     background: #3F3F3F;
     border-radius: 5px;
 }
+
+
 
 .item-icon {
     width: 20%;
@@ -372,7 +374,7 @@ label {
     background-color: #FFC83D;
     color: #272727;
     font-weight: 600;
-    border: none;
+    border-color: #FFC83D;
 }
 
 .btn.btn-primary:hover {
@@ -389,6 +391,7 @@ label {
 
 .btn.btn-secondary{
     background-color: #007bff;
+    border-color: #007bff;
 }
 .btn.btn-secondary:hover{
     background-color: #007bffbf;
@@ -398,6 +401,9 @@ label {
     background-color: #f3f3f3;
     border:solid thin #ced4da;
     border-radius: 5px;
+}
+.btn.btn-outline:hover{
+    background-color: #e3e3e3;
 }
 
 .send-button {
@@ -504,6 +510,15 @@ table {
     font-size: 14px;
 }
 
+/* <-- PAGINATION --> */
+.page-link{
+    color: #000;
+}
+.page-item.active .page-link {
+    background-color: #FFC83D;
+    border-color: #FFC83D;
+}
+
 /* <-- RESPONSIVE --> */
 
 @media only screen and (max-width: 600px) {
@@ -523,7 +538,7 @@ table {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     #mySidenav {
-        width: 270px !important;
+        width: 250px !important;
     }
 
     .closenavbtn {
@@ -535,7 +550,7 @@ table {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     #mySidenav {
-        width: 270px !important;
+        width: 250px !important;
     }
 
     .closenavbtn {
@@ -556,7 +571,7 @@ table {
 
 @media only screen and (min-width: 1440px) {
     #mySidenav {
-        width: 270px !important;
+        width: 250px !important;
     }
 
     .closenavbtn {

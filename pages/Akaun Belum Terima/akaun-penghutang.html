@@ -145,7 +145,7 @@
                             <p>Rekod</p>
                         </div>
                         <div class="search-form">
-                            <input class="form-control" type="text" placeholder="Search">
+                            <input class="form-control" type="text" placeholder="Cari">
                         </div>
                     </div>
 
@@ -162,7 +162,7 @@
                             <tbody>
 
                                 <tr>
-                                    <td colspan="4" class="data-table-empty">No Record Found</td>
+                                    <td colspan="4" class="data-table-empty">Tiada Rekod Ditemui</td>
                                 </tr>
 
                             </tbody>
@@ -176,7 +176,7 @@
                             <nav aria-label="...">
                                 <ul class="pagination">
                                     <li class="page-item disabled">
-                                        <span class="page-link">Previous</span>
+                                        <span class="page-link">Sebelumnya</span>
                                     </li>
                                     <li class="page-item"><a class="page-link" href="#">1</a></li>
                                     <li class="page-item active">
@@ -187,7 +187,7 @@
                                     </li>
                                     <li class="page-item"><a class="page-link" href="#">3</a></li>
                                     <li class="page-item">
-                                        <a class="page-link" href="#">Next</a>
+                                        <a class="page-link" href="#">Seterusnya</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -401,8 +401,8 @@
                                 </div>
 
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Simpan</button>
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
+                                    <button type="button" class="btn btn-secondary">Simpan</button>
                                 </div>
                             </div>
                         </div>
@@ -424,14 +424,8 @@
             </div>
         </div>
     </div>
-
-    <script>
-        $(document).ready(function () {
-            $('.searchable-dropdown').selectize({
-                sortField: 'text'
-            });
-        });
-    </script>
+    
+   
 </body>
 
 </html>

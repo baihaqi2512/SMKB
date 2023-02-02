@@ -1,3 +1,11 @@
+
+  // <-- SEARCHABLE DROPDOWN -->
+$(document).ready(function () {
+  $('.searchable-dropdown').selectize({
+      sortField: 'text'
+  });
+});
+
 // <-- PROFILE BUTTON -->
 
 function menuToggle() {
@@ -36,16 +44,24 @@ function openTab(evt, cityName) {
   // < -- RESPONSIVE SIDENAV -- >
 
   function openNav() {
-    document.getElementById("mySidenav").style.width = "270px";
+    document.getElementById("mySidenav").style.width = "250px";
   }
   
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
 
-  // <-- SEARCHABLE DROPDOWN -->
-  $(document).ready(function () {
-    $('select').selectize({
-        sortField: 'text'
-    });
-});
+
+ 
+
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
