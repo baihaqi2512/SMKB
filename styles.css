@@ -36,9 +36,23 @@ label {
     cursor: pointer;
 }
 
-.add-file i {margin-inline: 10px;}
+.add-file i {
+    margin-inline: 10px;
+}
 
 /* <-- USER HEADER PROFILE CSS --> */
+
+.account-info {
+    display: flex;
+    align-items: center;
+}
+
+.account-info a {
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff !important;
+}
 
 .action .profile {
     position: relative;
@@ -59,7 +73,7 @@ label {
     position: absolute;
     top: 120px;
     right: 10px;
-    padding: 10px 20px;
+    padding: 10px 0px;
     background: rgb(60 59 59);
     width: 200px;
     box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
@@ -131,6 +145,11 @@ label {
     transition: 0.5s;
 }
 
+.action .menu ul li i {
+    font-size: 32px;
+    color: #fff;
+}
+
 .action .menu ul li:hover a {
     color: #ff5d94;
 }
@@ -138,6 +157,7 @@ label {
 /* <-- DASHBOARD --> */
 
 .dashboard-content {
+    /* min-height: 100%; */
     padding: 30px;
 }
 
@@ -185,6 +205,12 @@ label {
     font-size: 1.25em;
 }
 
+.menu-card i {
+    font-size: 64px;
+    padding-bottom: 10px;
+    padding: 15px 0px;
+}
+
 /* <-- CONTENT --> */
 
 .content-container {
@@ -201,7 +227,7 @@ label {
     margin: 25px;
 }
 
-.notabcontent{
+.notabcontent {
     padding: 20px;
 }
 
@@ -247,6 +273,14 @@ label {
 .back-btn a {
     padding-left: 20px;
 }
+
+.back-btn i {
+    font-size: 24px;
+}
+
+/* <-- MENU CARD --> */
+
+
 
 /* <-- SIDE BAR NAVIGATION--> */
 
@@ -308,11 +342,14 @@ label {
     border-radius: 5px;
 }
 
-
-
 .item-icon {
     width: 20%;
-    padding-inline: 10px;
+    text-align: center;
+    /* padding-inline: 10px; */
+}
+
+.item-icon i {
+    font-size: 24px;
 }
 
 .item-title {
@@ -363,8 +400,9 @@ label {
 
 .btn {
     font-size: 14px;
-    padding-inline:25px;
+    padding-inline: 25px;
 }
+
 .btn i {
     margin-right: 10px;
 
@@ -389,20 +427,22 @@ label {
     background-color: #fcbc1c;
 }
 
-.btn.btn-secondary{
+.btn.btn-secondary {
     background-color: #007bff;
     border-color: #007bff;
 }
-.btn.btn-secondary:hover{
+
+.btn.btn-secondary:hover {
     background-color: #007bffbf;
 }
 
-.btn.btn-outline{
+.btn.btn-outline {
     background-color: #f3f3f3;
-    border:solid thin #ced4da;
+    border: solid thin #ced4da;
     border-radius: 5px;
 }
-.btn.btn-outline:hover{
+
+.btn.btn-outline:hover {
     background-color: #e3e3e3;
 }
 
@@ -425,9 +465,10 @@ table {
     padding-bottom: 15px;
 }
 
-.tindakan{
+.tindakan {
     white-space: nowrap;
 }
+
 .tindakan i {
     cursor: pointer;
     font-size: 24px;
@@ -479,6 +520,12 @@ table {
     margin: 0 10px;
 }
 
+.search-form i {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
 .show-record {
     display: flex;
     align-items: center;
@@ -511,9 +558,10 @@ table {
 }
 
 /* <-- PAGINATION --> */
-.page-link{
+.page-link {
     color: #000;
 }
+
 .page-item.active .page-link {
     background-color: #FFC83D;
     border-color: #FFC83D;
@@ -533,6 +581,10 @@ table {
     .content-container {
         margin: 0;
     }
+
+    .account-info a {
+        display: none;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -544,7 +596,7 @@ table {
     .closenavbtn {
         display: none;
     }
-   
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -578,3 +630,50 @@ table {
         display: none;
     }
 }
+
+#pageMessages {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 30%;
+}
+
+.alert {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    z-index: 999;
+    animation: slide-in-right 0.5s ease-in-out forwards, slide-out-right 0.5s ease-in-out 3s forwards;
+}
+
+.alert .close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1em;
+}
+
+.alert .fa {
+    margin-right: .3em;
+}
+
+/* <-- ANIMATION --> */
+
+@keyframes slide-in-right {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-out-right {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }

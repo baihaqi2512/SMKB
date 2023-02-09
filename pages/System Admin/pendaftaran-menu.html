@@ -4,27 +4,37 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- CSS LOCAL -->
     <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="../../styles.css" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"
-        integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
+    <!-- FONT LINK -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+    <!-- ICON LINK -->
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css"
-        integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script src='../../assets/bootstrap/js/bootstrap.min.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
 
-    <script src="../../assets/script/script.js"></script>
+    <!-- SCRIPT CDN -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"
+        integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
+
+    <!-- SCRIPT LOCAL -->
+    <script src="../../assets/script/script.js"></script>
+    <script src='../../assets/bootstrap/js/bootstrap.min.js'></script>
+    
 </head>
 
 <body>
@@ -38,16 +48,16 @@
             <div class="navigation">
                 <div class="menu-item active">
                     <div class="item-icon">
-                        <img src="../../assets/icon/dashboard.svg">
+                        <i class="las la-sitemap"></i>
                     </div>
-                    <div class="item-title">
+                    <div id="item-title" class="item-title">
                         <a>Pendaftaran Menu</a>
                     </div>
                 </div>
 
                 <div class="menu-item" onclick="location.href='pengurusan-pencapaian.html';">
                     <div class="item-icon">
-                        <img src="../../assets/icon/pencapaian.svg">
+                        <i class="las la-award"></i>
                     </div>
                     <div class="item-title">
                         <a>Pengurusan Pencapaian</a>
@@ -56,16 +66,16 @@
 
                 <div class="menu-item" onclick="location.href='pengurusan-pengguna.html';">
                     <div class="item-icon">
-                        <img src="../../assets/icon/pengurusan-pengguna.svg">
+                        <i class="las la-user"></i>
                     </div>
                     <div class="item-title">
-                        <a>Pengurusan Menu</a>
+                        <a>Pengurusan Pengguna</a>
                     </div>
                 </div>
 
                 <div class="menu-item" onclick="location.href='pengurusan-akaun.html';">
                     <div class="item-icon">
-                        <img src="../../assets/icon/pengurusan-akaun.svg">
+                        <i class="las la-user-circle"></i>
                     </div>
                     <div class="item-title">
                         <a>Pengurusan Akaun</a>
@@ -74,7 +84,7 @@
 
                 <div class="menu-item" onclick="location.href='daftar-jenis-pembayaran.html';">
                     <div class="item-icon">
-                        <img src="../../assets/icon/jenis-bayaran.svg">
+                        <i class="las la-handshake"></i>
                     </div>
                     <div class="item-title">
                         <a>Daftar Jenis Pembayaran</a>
@@ -83,7 +93,7 @@
 
                 <div class="menu-item" onclick="location.href='daftar-jenis-urusniaga.html';">
                     <div class="item-icon">
-                        <img src="../../assets/icon/urusniaga.svg">
+                        <i class="las la-landmark"></i>
                     </div>
                     <div class="item-title">
                         <a>Daftar Jenis Urusniaga</a>
@@ -124,8 +134,10 @@
                     </div>
                 </div>
             </div>
-
             <div class="content">
+                <div id="alert-box" class="alert alert-primary" role="alert">
+                    <strong>Modul Pentadbir Sistem</strong>
+                  </div>
                 <div class="sub-modul-title">
                     <h5>Pendaftaran Menu</h5>
                 </div>
@@ -141,7 +153,7 @@
                     <div class="table-title">
                         <h6>Senarai Modul</h6>
 
-                        <div class="btn btn-primary" data-toggle="modal" data-target="#ModulForm">+ Tambah Modul
+                        <div class="btn btn-primary" data-toggle="modal" data-target="#MessageModal">+ Tambah Modul
                         </div>
                     </div>
                     <div class="filter-table-function">
@@ -210,7 +222,7 @@
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalCenterTitle">Tambah Modul Baharu</h5>
+                                    <h5 class="modal-title">Tambah Modul Baharu</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
@@ -259,11 +271,34 @@
 
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
-                                    <button type="button" class="btn btn-danger">Simpan</button>
+                                    <button type="button" class="btn btn-secondary">Simpan</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Modal Message Box -->
+                    <div class="modal fade" id="MessageModal" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Tolong Sahkan?</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Adakah anda pasti mahu menambah modul?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Tidak</button>
+                                    <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                        data-target="#ModulForm" data-dismiss="modal">Ya</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
                 <!-- SECOND TAB  -->
