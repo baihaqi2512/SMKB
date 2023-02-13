@@ -16,11 +16,12 @@
 </head>
 
 <body>
+
   <div class="header">
     <div class="header-logo">
       <img src="./assets/images/smkb-logo.svg">
     </div>
-    <div class="account-info">
+    <div class="account-info dark">
       <a>Mr. David</a>
       <div class="action">
         <div class="profile" onclick="menuToggle();">
@@ -40,35 +41,36 @@
   </div>
 
   <div class="dashboard-content">
-    
+
     <div id="alert-box" class="alert alert-primary" role="alert">
       <strong>Selamat Datang Ke Sistem Maklumat Kewangan UTeM!</strong>
     </div>
 
+
     <div class="row">
       <div id="card-column" class="col-md-3">
-        <div class="menu-card" onclick="location.href='./pages/System Admin/pendaftaran-menu.html';">
+        <div id="menu-card" class="menu-card" onclick="location.href='./pages/System Admin/pendaftaran-menu.html';">
           <i class="las la-user-shield"></i>
           <p>Pentadbir Sistem</p>
         </div>
       </div>
 
       <div id="card-column" class="col-md-3">
-        <div class="menu-card" onclick="location.href='./pages/Akaun Belum Terima/akaun-penghutang.html';">
+        <div id="menu-card" class="menu-card" onclick="location.href='./pages/Akaun Belum Terima/akaun-penghutang.html';">
           <i class="las la-hand-holding-usd"></i>
           <p>Akaun Belum Terima</p>
         </div>
       </div>
 
       <div id="card-column" class="col-md-3">
-        <div class="menu-card">
+        <div id="menu-card" class="menu-card">
           <i class="las la-book"></i>
           <p>Jurnal</p>
         </div>
       </div>
 
       <div id="card-column" class="col-md-3">
-        <div class="menu-card">
+        <div id="menu-card" class="menu-card">
           <i class="las la-donate"></i>
           <p>Akaun Belum Bayar</p>
         </div>
@@ -77,13 +79,14 @@
   </div>
   <script>
 
-    var colors = ["#E6FAFF", "#EBFDE8", "#FCEAE9", "#FFF8E5"];
+    var bgcolors = ["#E6FAFF", "#EBFDE8", "#FCEAE9", "#FFF8E5", "#F2E6FF", "#E8FDFA", "#FCF3E9", "#E5FFF0",
+      "#E6EBFF", "#FCFDE8", "#E9F3FC", "#FFE5F6", "#FBE6FF", "#E8FDEE", "#FCF2E9", "#F2FFE5"];
 
     var el = document.querySelectorAll('#card-column > .menu-card');
     //OR (If you have the older browser)
     //var el =[].slice.call(document.querySelectorAll('#customizeMenu > .l1'));
     el.forEach(function (item, i) {
-      item.style.backgroundColor = colors[i];
+      item.style.backgroundColor = bgcolors[i];
     });
 
   </script>
