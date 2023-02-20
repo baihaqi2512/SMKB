@@ -53,7 +53,7 @@
                     </div>
                 </div>
 
-                <div class="menu-item" onclick="location.href='grn-srn.html';">
+                <div class="menu-item active" onclick="location.href='grn-srn.html';">
                     <div class="item-icon">
                         <i class="las la-file-invoice"></i>
                     </div>
@@ -71,7 +71,7 @@
                     </div>
                 </div>
 
-                <div class="menu-item active" onclick="location.href='pengurusan-penerimaan.html';">
+                <div class="menu-item" onclick="location.href='pengurusan-penerimaan.html';">
                     <div class="item-icon">
                         <i class="las la-hand-holding-usd"></i>
                     </div>
@@ -135,13 +135,12 @@
             </div>
             <div class="content">
                 <div class="sub-modul-title">
-                    <h5>Pengurusan Penerimaan</h5>
+                    <h5>GRN / SRN</h5>
                 </div>
 
                 <div class="tab">
-                    <button class="tablinks active" onclick="openTab(event, 'Tab1')">Permohonan Pembayaran</button>
-                    <button class="tablinks" onclick="openTab(event, 'Tab2')">Received Notes</button>
-                    <button class="tablinks" onclick="openTab(event, 'Tab3')">Invois (Bil)</button>
+                    <button class="tablinks active" onclick="openTab(event, 'Tab1')">GRN</button>
+                    <button class="tablinks" onclick="openTab(event, 'Tab2')">WPN</button>
                 </div>
 
                 <!-- FIRST TAB  -->
@@ -167,7 +166,10 @@
                         </div>
                     </div>
                     <div class="table-title">
-                        <h6>Senarai Permohanan Pembayaran</h6>
+                        <h6>Senarai GRN</h6>
+
+                        <div class="btn btn-primary" data-toggle="modal" data-target="#RekodBaruGRN">+ Rekod Baru
+                        </div>
                     </div>
                     <div class="filter-table-function">
                         <div class="show-record">
@@ -228,34 +230,167 @@
                             </nav>
                         </div>
                     </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="RekodBaruGRN" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Rekod Baru GRN</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
 
+                                <div class="modal-body step-form">
+                                    <div class="container">
+
+                                        <div class="stepwizard col-md-offset-3">
+                                            <div class="row setup-panel">
+                                                <div class="stepwizard-step col-md-4 active">
+                                                    <a href="#step-1" type="button"
+                                                        class="btn btn-primary btn-circle">1</a>
+                                                    <p>Terimaan Bekalan</p>
+                                                </div>
+                                                <div class="stepwizard-step col-md-4">
+                                                    <a href="#step-2" type="button" class="btn btn-default btn-circle"
+                                                        disabled="disabled">2</a>
+                                                    <p>Penilaian Prestasi Pembekal</p>
+                                                </div>
+                                                <div class="stepwizard-step col-md-4">
+                                                    <a href="#step-3" type="button" class="btn btn-default btn-circle"
+                                                        disabled="disabled">3</a>
+                                                    <p>Hantar</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <form role="form" action="" method="post">
+                                            <div class="row setup-content" id="step-1">
+
+                                                <div class="col-md-12">
+                                                    <!-- <h6>Terimaan Bekalan</h6> -->
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            <label>No. GRN/SRN</label>
+                                                            <input class="form-control" type="text"
+                                                                placeholder="No. GRN/SRN">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label>Tarikh</label>
+                                                            <input class="form-control" type="date"
+                                                                placeholder="Tarikh">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            <label>Status</label>
+                                                            <input class="form-control" type="text"
+                                                                placeholder="No. GRN/SRN">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label>No PT/PB</label>
+                                                            <select class="form-control searchable-dropdown">
+                                                                <option>32141</option>
+                                                                <option>002226</option>
+                                                                <option>03215</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            <label>Jenis Perolehan</label>
+                                                            <input class="form-control" type="text"
+                                                                placeholder="No. GRN/SRN">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label>Jenis Bekalan</label>
+                                                            <input class="form-control" type="text"
+                                                                placeholder="Tarikh">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Tujuan</label>
+                                                        <textarea class="form-control" rows="3"></textarea>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            <label>No. DO</label>
+                                                            <input class="form-control" type="text"
+                                                                placeholder="No. GRN/SRN">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label>Tarikh DO</label>
+                                                            <input class="form-control" type="date"
+                                                                placeholder="Tarikh">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            <label>No. Invois</label>
+                                                            <input class="form-control" type="text"
+                                                                placeholder="No. GRN/SRN">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label>Tarikh Invois</label>
+                                                            <input class="form-control" type="date"
+                                                                placeholder="Tarikh">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="step-btn">
+                                                        <button class="btn btn-primary nextBtn btn-lg pull-right"
+                                                            type="button">Next</button>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="row setup-content" id="step-2">
+
+                                                <div class="col-md-12">
+
+                                                    <div class="step-btn">
+                                                        <button class="btn btn-primary prevBtn btn-lg pull-left"
+                                                            type="button">Previous</button>
+                                                        <button class="btn btn-primary nextBtn btn-lg pull-right"
+                                                            type="button">Next</button>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="row setup-content" id="step-3">
+
+                                                <div class="col-md-12">
+
+                                                    <div class="step-btn">
+                                                        <button class="btn btn-primary prevBtn btn-lg pull-left"
+                                                            type="button">Previous</button>
+                                                        <button class="btn btn-secondary btn-lg pull-right"
+                                                            type="submit">Submit</button>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
 
                 <!-- SECOND TAB  -->
                 <div id="Tab2" class="tabcontent">
-                    <div class="search-filter">
-                        <div class="form-row justify-content-center">
-                            <div class="form-group row col-md-6">
-                                <label class="col-sm-3 col-form-label">Jenis Carian:</label>
-                                <div class="col-sm-8">
-                                    <div class="input-group">
-                                        <select class="custom-select">
-                                            <option selected>- Sila Pilih -</option>
-                                            <option value="1">Pelajar</option>
-                                            <option value="2">Kewangan</option>
-                                        </select>
-                                        <div class="input-group-append">
-                                            <button class="btn btn-outline" type="button"><i
-                                                    class="fa fa-search"></i>Cari</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="table-title">
-                        <h6>Senarai GRN/SRN/WPN</h6>
+                        <h6>Senarai WPN</h6>
+
+                        <div class="btn btn-primary" data-toggle="modal" data-target="#RekodBaruWPN">+ Rekod Baru
+                        </div>
                     </div>
                     <div class="filter-table-function">
                         <div class="show-record">
@@ -316,102 +451,15 @@
                             </nav>
                         </div>
                     </div>
+
                 </div>
-
-                <!-- THIRD TAB  -->
-                <div id="Tab3" class="tabcontent">
-                    <div class="search-filter">
-                        <div class="form-row justify-content-center">
-                            <div class="form-group row col-md-6">
-                                <label class="col-sm-3 col-form-label">Jenis Carian:</label>
-                                <div class="col-sm-8">
-                                    <div class="input-group">
-                                        <select class="custom-select">
-                                            <option selected>- Sila Pilih -</option>
-                                            <option value="1">Pelajar</option>
-                                            <option value="2">Kewangan</option>
-                                        </select>
-                                        <div class="input-group-append">
-                                            <button class="btn btn-outline" type="button"><i
-                                                    class="fa fa-search"></i>Cari</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="table-title">
-                        <h6>Senarai Invois (Bil)</h6>
-                    </div>
-                    <div class="filter-table-function">
-                        <div class="show-record">
-                            <p>Tunjukkan</p>
-                            <select class="form-control">
-                                <option>5</option>
-                                <option>10</option>
-                                <option>20</option>
-                                <option>50</option>
-                            </select>
-                            <p>Rekod</p>
-                        </div>
-                        <div class="search-form">
-                            <input class="form-control" type="text" placeholder="Cari">
-                        </div>
-                    </div>
-                    <div class="table-list table-responsive">
-                        <table class="table table-striped table-bordered">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-
-                                <tr>
-                                    <td colspan="4" class="data-table-empty">Tiada Rekod Ditemui</td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="table-navigation">
-                        <div class="table-record">
-                            <p>Jumlah Rekod: 25</p>
-                        </div>
-                        <div class="table-page-nav">
-                            <nav aria-label="...">
-                                <ul class="pagination">
-                                    <li class="page-item disabled">
-                                        <span class="page-link">Sebelumnya</span>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item active">
-                                        <span class="page-link">
-                                            2
-                                            <span class="sr-only">(current)</span>
-                                        </span>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">Seterusnya</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
             </div>
         </div>
     </div>
 
+    <script>
 
+    </script>
 </body>
 
 </html>

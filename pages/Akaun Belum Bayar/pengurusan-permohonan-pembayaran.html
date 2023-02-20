@@ -62,7 +62,7 @@
                     </div>
                 </div>
 
-                <div class="menu-item" onclick="location.href='pengurusan-permohonan-pembayaran.html';">
+                <div class="menu-item active" onclick="location.href='pengurusan-permohonan-pembayaran.html';">
                     <div class="item-icon">
                         <i class="las la-cash-register"></i>
                     </div>
@@ -71,7 +71,7 @@
                     </div>
                 </div>
 
-                <div class="menu-item active" onclick="location.href='pengurusan-penerimaan.html';">
+                <div class="menu-item" onclick="location.href='pengurusan-penerimaan.html';">
                     <div class="item-icon">
                         <i class="las la-hand-holding-usd"></i>
                     </div>
@@ -135,17 +135,18 @@
             </div>
             <div class="content">
                 <div class="sub-modul-title">
-                    <h5>Pengurusan Penerimaan</h5>
+                    <h5>Pengurusan Permohonan Pembayaran</h5>
                 </div>
 
                 <div class="tab">
-                    <button class="tablinks active" onclick="openTab(event, 'Tab1')">Permohonan Pembayaran</button>
-                    <button class="tablinks" onclick="openTab(event, 'Tab2')">Received Notes</button>
-                    <button class="tablinks" onclick="openTab(event, 'Tab3')">Invois (Bil)</button>
+                    <button class="tablinks active" onclick="openTab(event, 'Tab1')">Permohonan Pembayaran
+                        (Lain-Lain)</button>
+                    <button class="tablinks" onclick="openTab(event, 'Tab2')">Sokongan Permohanan Pembayaran</button>
                 </div>
 
                 <!-- FIRST TAB  -->
                 <div id="Tab1" class="tabcontent" style="display:block">
+
                     <div class="search-filter">
                         <div class="form-row justify-content-center">
                             <div class="form-group row col-md-6">
@@ -167,7 +168,10 @@
                         </div>
                     </div>
                     <div class="table-title">
-                        <h6>Senarai Permohanan Pembayaran</h6>
+                        <h6>Senarai Permohonan Pembayaran (Lain-Lain)</h6>
+
+                        <div class="btn btn-primary" data-toggle="modal" data-target="#ModalForm">+ Permohonan Baru
+                        </div>
                     </div>
                     <div class="filter-table-function">
                         <div class="show-record">
@@ -229,11 +233,34 @@
                         </div>
                     </div>
 
-                </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="ModalForm" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Modal Title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
 
+                                <div class="modal-body">
+
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
+                                    <button type="button" class="btn btn-secondary">Simpan</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- SECOND TAB  -->
                 <div id="Tab2" class="tabcontent">
+
                     <div class="search-filter">
                         <div class="form-row justify-content-center">
                             <div class="form-group row col-md-6">
@@ -255,7 +282,10 @@
                         </div>
                     </div>
                     <div class="table-title">
-                        <h6>Senarai GRN/SRN/WPN</h6>
+                        <h6>Senarai Permohonan Pembayaran</h6>
+
+                        <div class="btn btn-primary" data-toggle="modal" data-target="#ModalForm">+ Permohonan Baru
+                        </div>
                     </div>
                     <div class="filter-table-function">
                         <div class="show-record">
@@ -316,96 +346,31 @@
                             </nav>
                         </div>
                     </div>
+                   
+                 <!-- Modal -->
+                 <div class="modal fade" id="ModalForm" tabindex="-1" role="dialog"
+                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                 <div class="modal-dialog modal-dialog-centered" role="document">
+                     <div class="modal-content">
+                         <div class="modal-header">
+                             <h5 class="modal-title">Modal Title</h5>
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                             </button>
+                         </div>
+
+                         <div class="modal-body">
+                            
+                         </div>
+
+                         <div class="modal-footer">
+                             <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
+                             <button type="button" class="btn btn-secondary">Simpan</button>
+                         </div>
+                     </div>
+                 </div>
+             </div>
                 </div>
-
-                <!-- THIRD TAB  -->
-                <div id="Tab3" class="tabcontent">
-                    <div class="search-filter">
-                        <div class="form-row justify-content-center">
-                            <div class="form-group row col-md-6">
-                                <label class="col-sm-3 col-form-label">Jenis Carian:</label>
-                                <div class="col-sm-8">
-                                    <div class="input-group">
-                                        <select class="custom-select">
-                                            <option selected>- Sila Pilih -</option>
-                                            <option value="1">Pelajar</option>
-                                            <option value="2">Kewangan</option>
-                                        </select>
-                                        <div class="input-group-append">
-                                            <button class="btn btn-outline" type="button"><i
-                                                    class="fa fa-search"></i>Cari</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="table-title">
-                        <h6>Senarai Invois (Bil)</h6>
-                    </div>
-                    <div class="filter-table-function">
-                        <div class="show-record">
-                            <p>Tunjukkan</p>
-                            <select class="form-control">
-                                <option>5</option>
-                                <option>10</option>
-                                <option>20</option>
-                                <option>50</option>
-                            </select>
-                            <p>Rekod</p>
-                        </div>
-                        <div class="search-form">
-                            <input class="form-control" type="text" placeholder="Cari">
-                        </div>
-                    </div>
-                    <div class="table-list table-responsive">
-                        <table class="table table-striped table-bordered">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-
-                                <tr>
-                                    <td colspan="4" class="data-table-empty">Tiada Rekod Ditemui</td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="table-navigation">
-                        <div class="table-record">
-                            <p>Jumlah Rekod: 25</p>
-                        </div>
-                        <div class="table-page-nav">
-                            <nav aria-label="...">
-                                <ul class="pagination">
-                                    <li class="page-item disabled">
-                                        <span class="page-link">Sebelumnya</span>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item active">
-                                        <span class="page-link">
-                                            2
-                                            <span class="sr-only">(current)</span>
-                                        </span>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">Seterusnya</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-
-
-
 
             </div>
         </div>
