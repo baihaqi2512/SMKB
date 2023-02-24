@@ -212,60 +212,80 @@
                     <div class="modal fade" id="ModulForm" tabindex="-1" role="dialog"
                         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Tambah Modul Baharu</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-
-                                <div class="modal-body">
-                                    <div class="form-row">
-                                        <div class="form-group col-md-6">
-                                            <label for="kodModul">Kod Modul</label>
-                                            <input type="text" class="form-control" id="kod" placeholder="Kod Modul">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="kodModul">Nama Modul</label>
-                                            <input type="text" class="form-control" id="kod" placeholder="Nama Modul">
-                                        </div>
+                            <form class="needs-validation" novalidate>
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Tambah Modul Baharu</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
                                     </div>
 
-                                    <div class="form-group">
-                                        <label for="kodModul">Nama Paparan</label>
-                                        <input type="text" class="form-control" id="kod" placeholder="Nama Paparan">
-                                    </div>
-
-                                    <div class="form-row">
-                                        <div class="form-group col-md-6">
-                                            <label for="kodModul">Urutan</label>
-                                            <input type="number" class="form-control" id="kod" placeholder="Urutan">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label>Status</label>
-                                            <div class="radio-btn-form">
-                                                <div class="form-check form-check-inline radio-size">
-                                                    <input class="form-check-input" type="radio"
-                                                        name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                                    <label class="form-check-label" for="inlineRadio1">1</label>
-                                                </div>
-                                                <div class="form-check form-check-inline radio-size">
-                                                    <input class="form-check-input" type="radio"
-                                                        name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                                    <label class="form-check-label" for="inlineRadio2">2</label>
-                                                </div>
+                                    <div class="modal-body">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="kodModul">Kod Modul</label>
+                                                <input type="text" class="form-control" id="kod" placeholder="Kod Modul"
+                                                    required>
+                                                    <div class="invalid-feedback">
+                                                        Sila isi.
+                                                      </div>
                                             </div>
-
+                                            <div class="form-group col-md-6">
+                                                <label for="kodModul">Nama Modul</label>
+                                                <input type="text" class="form-control" id="kod"
+                                                    placeholder="Nama Modul" required>
+                                                    <div class="invalid-feedback">
+                                                        Sila isi.
+                                                      </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
 
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
-                                    <button type="button" class="btn btn-secondary">Simpan</button>
+                                        <div class="form-group">
+                                            <label for="kodModul">Nama Paparan</label>
+                                            <input type="text" class="form-control" id="kod" placeholder="Nama Paparan"
+                                                required>
+                                                <div class="invalid-feedback">
+                                                    Sila isi.
+                                                  </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="kodModul">Urutan</label>
+                                                <input type="number" class="form-control" id="kod" placeholder="Urutan"
+                                                    required>
+                                                    <div class="invalid-feedback">
+                                                        Sila isi.
+                                                      </div>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label>Status</label>
+                                                <div class="radio-btn-form">
+                                                    <div class="form-check form-check-inline radio-size">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio1">1</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline radio-size">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio2">2</label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
+                                        <button type="submit" class="btn btn-secondary">Simpan</button>
+                                    </div>
+
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
 

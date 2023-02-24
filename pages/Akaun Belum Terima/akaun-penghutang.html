@@ -72,24 +72,17 @@
                     <i class="fa fa-angle-left"></i>
                     <a>Akaun Belum Terima</a>
                 </div>
-                <div class="account-info">
+                <div class="account-info light">
+                    <a>Mr. David</a>
                     <div class="action">
                         <div class="profile" onclick="menuToggle();">
                             <img src="../../assets/images/user.png" />
                         </div>
                         <div class="menu">
-                            <h3>Your Name<br /><span>System Admin</span></h3>
+                            <h3>David Beckham<br /><span>System Admin</span></h3>
                             <ul>
                                 <li>
-                                    <a href="#">My profile</a>
-                                </li>
-                                <li>
-                                    <a href="#">Edit profile</a>
-                                </li>
-                                <li>
-                                    <a href="#">Setting</a>
-                                </li>
-                                <li>
+                                    <i class="las la-sign-out-alt"></i>
                                     <a href="#">Logout</a>
                                 </li>
                             </ul>
@@ -214,16 +207,17 @@
                     <div class="modal fade" id="permohonaninvois" tabindex="-1" role="dialog"
                         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalCenterTitle">Tambah Invois Kewangan</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
+                            <form class="needs-validation" novalidate>
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalCenterTitle">Tambah Invois Kewangan</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
 
-                                <div class="modal-body">
-                                    <form>
+                                    <div class="modal-body">
+
                                         <h6>Maklumat Invois</h6>
                                         <hr>
                                         <div class="row">
@@ -232,29 +226,41 @@
                                                 <div class="form-row">
                                                     <div class="form-group col-md-6">
                                                         <label>No. Invois</label>
-                                                        <input type="text" class="form-control" placeholder="No.Invois">
+                                                        <input type="text" class="form-control" placeholder="No.Invois"
+                                                            required>
+                                                        <div class="invalid-feedback">
+                                                            Sila isi.
+                                                        </div>
                                                     </div>
                                                     <div class="form-group col-md-6">
                                                         <label>Tarikh Mohon</label>
-                                                        <input type="date" class="form-control" placeholder="date">
+                                                        <input type="date" class="form-control" placeholder="date"
+                                                            required>
+                                                        <div class="invalid-feedback">
+                                                            Sila isi.
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Bank</label>
-                                                    <select class="form-control searchable-dropdown">
+                                                    <select class="form-control searchable-dropdown" required>
                                                         <option>Maybank</option>
                                                         <option>Bank Islam</option>
                                                         <option>RHB Bank</option>
                                                     </select>
+                                                    
                                                 </div>
                                                 <div class="form-row">
                                                     <div class="form-group col-md-6">
                                                         <label>Jenis Urusniaga</label>
-                                                        <select class="form-control searchable-dropdown">
+                                                        <select class="form-control searchable-dropdown" required>
                                                             <option disabled selected>- Sila Pilih -</option>
                                                             <option>Bank Islam</option>
                                                             <option>RHB Bank</option>
                                                         </select>
+                                                        <div class="invalid-feedback">
+                                                            Sila isi.
+                                                        </div>
                                                     </div>
                                                     <div class="form-group col-md-6">
                                                         <label>Berkontrak</label>
@@ -278,16 +284,22 @@
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Tujuan</label>
-                                                    <textarea class="form-control" id="" rows="3"></textarea>
+                                                    <textarea class="form-control" id="" rows="3" required></textarea>
+                                                    <div class="invalid-feedback">
+                                                        Sila isi.
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label>Status</label>
-                                                    <select class="form-control searchable-dropdown">
+                                                    <select class="form-control searchable-dropdown" required>
                                                         <option>Aktif</option>
                                                         <option>Tidak Aktif</option>
                                                     </select>
+                                                    <div class="invalid-feedback">
+                                                        Sila isi.
+                                                    </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label>No.Rujukan</label>
@@ -396,7 +408,7 @@
                                                         id="validatedCustomFile" required>
                                                     <label class="custom-file-label" for="validatedCustomFile">Choose
                                                         file...</label>
-                                                    <div class="invalid-feedback">Example invalid custom file feedback
+                                                    <div class="invalid-feedback">Invalid file 
                                                     </div>
                                                 </div>
                                             </div>
@@ -406,32 +418,33 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </form>
-                                </div>
 
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
-                                    <button type="button" class="btn btn-secondary">Simpan</button>
-                                </div>
-                            </div>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
+                                        <button type="submit" class="btn btn-secondary">Simpan</button>
+                                    </div>
+                            </form>
                         </div>
                     </div>
                 </div>
-
-                <!-- SECOND TAB  -->
-                <div id="KelulusanTab" class="tabcontent">
-                </div>
-
-                <!-- THIRD TAB  -->
-                <div id="PelarasanTab" class="tabcontent">
-                </div>
-
-                <!-- FOURTH TAB  -->
-                <div id="PembatalanInvoisTab" class="tabcontent">
-                </div>
-
             </div>
+
+            <!-- SECOND TAB  -->
+            <div id="KelulusanTab" class="tabcontent">
+            </div>
+
+            <!-- THIRD TAB  -->
+            <div id="PelarasanTab" class="tabcontent">
+            </div>
+
+            <!-- FOURTH TAB  -->
+            <div id="PembatalanInvoisTab" class="tabcontent">
+            </div>
+
         </div>
+    </div>
     </div>
 
 

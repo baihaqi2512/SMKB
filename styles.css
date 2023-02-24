@@ -40,6 +40,10 @@ label {
     margin-inline: 10px;
 }
 
+.step-missing-message{
+    text-align: center;
+}
+
 /* <-- USER HEADER PROFILE CSS --> */
 
 .account-info {
@@ -413,7 +417,7 @@ label {
 
 .btn i {
     margin-right: 10px;
-
+    font-size: 16px;
 }
 
 .btn.btn-primary {
@@ -457,6 +461,16 @@ label {
 .send-button {
     display: flex;
     justify-content: center;
+}
+
+.send-button button{
+    margin-inline: 5px;
+}
+
+.button-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* <-- TABLE CSS --> */
@@ -515,7 +529,7 @@ table {
 }
 
 .search-filter .form-group {
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
 }
 
 .function-bar {
@@ -562,6 +576,14 @@ table {
 /* <-- FORM CSS --> */
 
 .form-control {
+    font-size: 14px;
+}
+
+.form-check label{
+    font-weight: 500;
+}
+
+.input-group-text{
     font-size: 14px;
 }
 
@@ -615,7 +637,7 @@ table {
 
 .setup-panel::before{
     content: "";
-    width: 70%;
+    width: 100%;
     background-color: #454545;
     height: 2px;
     position: absolute;
